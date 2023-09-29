@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's LOTR Page - The One Ring</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/onering.ico">
+</head>
+<body>
+    <div class="topnav">
+        <a href="main.html">Home</a>
+        <a href="characters.html">Characters</a>
+        <a class="active" href="rings.html">The Rings of Power</a>
+        <a href="findring.html">Find the Ring</a>
+        <a href="contact.html">Contact</a>
+      </div><br>
+      
+      <h1>The Rings of Power</h1><br>
+      
+      <div id="app">
+        <ul>
+            <li
+                v-for="(item, index) in items"
+                :key="index"
+                class="list-item"
+                @click="showDetails(index)"
+            >
+                {{ item.name }}
+            </li>
+        </ul>
+        <div class="item-details" v-if="selectedItem">
+            <h2>{{ selectedItem.name }}</h2><br>
+            <p>{{ selectedItem.description }}</p>
+            <img :src="selectedItem.image || defaultImage" alt="Item Image">
+        </div>
+    </div>
+    
+    <br><br><img src="./images/ringsofpower/oneb.jpg" alt="The One Ring" class="responsive-image"><br>
+                <p>Three Rings for the Elven-kings under the sky,<br>
+                    Seven for the Dwarf-lords in their halls of stone,<br>
+                    Nine for Mortal Men doomed to die,<br>
+                    One for the Dark Lord on his dark throne<br>
+                    In the Land of Mordor where the Shadows lie.<br>
+                    One Ring to rule them all, One Ring to find them,<br>
+                    One Ring to bring them all and in the darkness bind them<br>
+                    In the Land of Mordor where the Shadows lie.<br></p>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.19/dist/vue.global.min.js"></script>
+    <script src="rings.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's LOTR Page - Find the Ring</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/witchking.ico">
+</head>
+<body style="background-image: none; background-color: black;">
+
+    <div class="topnav">
+        <a href="main.html">Home</a>
+        <a href="characters.html">Characters</a>
+        <a href="rings.html">The Rings of Power</a>
+        <a class="active" href="findring.html">Find the Ring</a>
+        <a href="contact.html">Contact</a>
+    </div><br>
+
+    <div id="app">
+        <p>Click Count: {{ clickCount }}</p><br>
+        <div class="image-container"
+             :style="{ top: imageTop + 'px', left: imageLeft + 'px' }"
+             @click="handleImageClick"
+             @mouseover="toggleImage"
+             @mouseout="toggleImage"
+        >
+            <img :src="currentImage" alt="Toggle Image" />
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.19/dist/vue.global.min.js"></script>
+    <script src="findring.js"></script>
+</body>
+</html>

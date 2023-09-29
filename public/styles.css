@@ -1,0 +1,199 @@
+@media screen and (min-width: 961px) {
+    body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(47, 101, 47);
+    background-image: url('./background.png');
+    background-repeat: repeat;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    background-color: white;
+    display: inline-block;
+    border-radius: 1vw;
+    padding: 0vw;
+}
+
+h1 {
+    background-color: white;
+    display: inline-block;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 3vw;
+}
+
+h2 {
+    background-color: white;
+    display: inline-block;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 2vw;
+}
+
+p {
+    background-color: white;
+    display: inline-block;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 1vw;
+}
+
+.responsive-image {
+    max-width: 50%;
+    height: auto;
+    background-color: white;
+    display: inline-block;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 1vw;
+}
+
+select {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+}
+
+button {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+}       
+
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 1vw 1vw;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.topnav a:hover {
+    text-decoration: none;
+    background-color: grey;
+    color: black;
+  }
+
+.topnav a.active {
+    background-color: mediumspringgreen;
+    color: white;
+  }
+}
+
+.image-container {
+    position: absolute;
+    padding: 1;
+    background-color: black;
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(47, 101, 47);
+    background-image: url('./background.png');
+    background-repeat: repeat;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    background-color: white;
+    display: inline-block;
+    border-radius: 1vw;
+    padding: 1vw;
+}
+
+h1 {
+    background-color: white;
+    display: inline-block;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 20px;
+}
+
+h2 {
+    background-color: white;
+    display: inline-block;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 15px;
+}
+
+p {
+    background-color: white;
+    display: inline-block;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 13px;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+    display: inline-block;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 1vw;
+}
+
+select {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+button {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+}       
+
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 1vw 1vw;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.topnav a:hover {
+    text-decoration: none;
+    background-color: grey;
+    color: black;
+  }
+
+.topnav a.active {
+    background-color: mediumspringgreen;
+    color: white;
+  }
+}
+
+.image-container {
+    position: absolute;
+    padding: 1;
+    background-color: black;
+    text-align: center;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex's LOTR Page - Characters</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/onering.ico">
+</head>
+<body>
+    <div class="topnav">
+        <a href="main.html">Home</a>
+        <a class="active" href="characters.html">Characters</a>
+        <a href="rings.html">The Rings of Power</a>
+        <a href="findring.html">Find the Ring</a>
+        <a href="contact.html">Contact</a>
+    </div><br>
+    <h1>Lord of the Rings Character Biographies</h1><br>
+    <p>Please choose a character to learn more about them:</p><br>
+    <div id="app">
+        <button @click="selectRandomCharacter">Random Character</button><br>
+        <select v-model="selectedCharacter">
+            <option disabled value="">Character</option>
+            <option v-for="character in characters" :key="character.name" :value="character.name">{{ character.name }}</option>
+        </select>
+        <div v-if="selectedCharacter">
+            <img :src="getCharacterImage(selectedCharacter)" :alt="selectedCharacter" class="responsive-image">
+            <p>{{ getCharacterBio(selectedCharacter) }}</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.19/dist/vue.global.min.js"></script>
+    <script src="characters.js"></script>
+</body>
+</html>
